@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Scientific Calculator</title>
+</head>
+
+<body>
+    <form name="calculator">
+        <table align="center">
+            <tr>
+                <td colspan="4">
+                    <input type="text" name="display" style="text-align: right;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" value="sin" onclick="sin()" class="specialCharacters">sin</button>
+                </td>
+                <td>
+                    <button type="button" value="cos" onclick="cos()" class="specialCharacters">cos</button>
+                </td>
+                <td>
+                    <button type="button" value="tan" onclick="tan()" class="specialCharacters">tan</button>
+                </td>
+                <td colspan="2">
+                    <button type="button" value="sin" onclick="clearAll()" class="clearAll">CA</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" value="x^2" onclick="square()" class="specialCharacters">x<sup>2</button>
+                </td>
+                <td>
+                    <button type="button" value="brackets" onclick="brackets()" class="specialCharacters">( )</button>
+                </td>
+                <td>
+                    <button type="button" value="sqrt2" onclick="sqrt2()" class="specialCharacters"> &radic;</button>
+                </td>
+                <td>
+                    <button type="button" value="backSpace" onclick="backSpace()" class="backSpace">
+                        Del</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" value="1" onclick="number(value)">1</button>
+                </td>
+                <td>
+                    <button type="button" value="2" onclick="number(value)">2</button>
+                </td>
+                <td>
+                    <button type="button" value="3" onclick="number(value)">3</button>
+                </td>
+                <td>
+                    <button type="button" value="log" onclick="log()" class="specialCharacters">log</button>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" value="4" onclick="number(value)">4</button>
+                </td>
+                <td>
+                    <button type="button" value="5" onclick="number(value)">5</button>
+                </td>
+                <td>
+                    <button type="button" value="6" onclick="number(value)">6</button>
+                </td>
+                <td>
+                    <button type="button" value="-" onclick="number(value)" class="specialCharacters">-</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" value="7" onclick="number(value)">7</button>
+                </td>
+                <td>
+                    <button type="button" value="8" onclick="number(value)">8</button>
+                </td>
+                <td>
+                    <button type="button" value="9" onclick="number(value)">9</button>
+                </td>
+                <td>
+                    <button type="button" value="/" onclick="number(value)" class="specialCharacters">/</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" value="." onclick="number(value)" class="specialCharacters">.</button>
+                </td>
+                <td>
+                    <button type="button" value="0" onclick="number(value)">0</button>
+                </td>
+                <td>
+                    <button type="button" value="*" onclick="number(value)" class="specialCharacters">*</button>
+                </td>
+                <td>
+                    <button type="button" value="%" onclick="number(value)" class="specialCharacters">%</button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="button" value="=" onclick="equal()" class="equal" class="specialCharacters">=</button>
+                </td>
+                <td colspan="2">
+                    <button type="button" value="+" onclick="number(value)" class="specialCharacters">+</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script type="text/javascript" src="./calculator.js"></script>
+
+</body>
+
+</html>
